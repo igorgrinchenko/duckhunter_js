@@ -1,0 +1,205 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: crosshair;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.game-field {
+  background-image: url(img/game-field.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.duckImg {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.score {
+  position: absolute;
+  z-index: 1;
+  height: 100px;
+  width: 200px;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+}
+
+.game-over {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: bisque;
+  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+}
+
+.game-over-visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu {
+  background-image: url(img/menu.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.9;
+}
+
+.menu-unvisible {
+  display: none;
+}
+
+.buttons-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 480px;
+}
+
+.buttons-wrap-unvisible {
+  display: none;
+}
+
+.difficult-wrap {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 480px;
+}
+
+.difficult-wrap-visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.difficult-info {
+  height: 80px;
+  color: #44b4e0;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+}
+
+.btn {
+  font-size: 50px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #44b4e0;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 15px;
+  border: 1px double black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: black;
+  border: 1px double #44b4e0;
+  color: #44b4e0;
+}
+
+.mute {
+  height: 60px;
+  width: 100px;
+  border-radius: 10%;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.easy {
+  color: #00db00;
+}
+
+.medium {
+  color: yellow;
+}
+
+.hard {
+  color: #aa1a1a;
+}
+
+.godMod {
+  color: #b700ff;
+}
+
+.info {
+  color: black;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */

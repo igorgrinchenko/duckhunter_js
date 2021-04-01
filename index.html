@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio class="mainMusic" src="sounds/main-music.mp3" autoplay='autoplay' loop='loop'></audio>
+
+    <div class="game-field">
+        <div class="menu">
+            <input class="btn mute" type="button" value="Mute">
+            <div class="buttons-wrap">
+                <div class="difficult-info">Change difficult</div>
+                <input class="btn" id="start" type="button" value="Start game">
+                <input class="btn" id="difficult" type="button" value="Difficult">
+                <input class="btn" id="quit" type="button" value="Quit">
+            </div>
+            <div class="difficult-wrap">
+                <input class="btn" id="easy" type="button" value="Easy">
+                <input class="btn" id="medium" type="button" value="Medium">
+                <input class="btn" id="hard" type="button" value="Hard">
+                <input class="btn" id="godMod" type="button" value="GOD MOD">
+            </div>
+        </div>
+        <div class="duck">
+            <img class="duckImg" src="https://seeklogo.com/images/D/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png" alt="">
+        </div>
+        <div class="score">
+            Your score: 0
+        </div>
+        <div class="game-over">
+            <p>
+                GAME OVER
+                <br>
+                Click for try again
+            </p>
+            <br>
+            <p id="my-score"></p>
+            <input class="btn" id="go-to-menu" type="button" value="Go to menu">
+        </div>
+        <div class="info">
+            <p>Developer: Igor Grinchenko. Game in demo version 1.0. All rigths reserved (c)</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
