@@ -116,3 +116,4 @@ function changeColor() {
 }
 
 setInterval(changeColor, 200)
+console.log('Hello');
